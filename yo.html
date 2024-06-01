@@ -19,7 +19,7 @@
               <a href="index.html" class="w3-bar-item w3-button w3-padding-large">INICIO</a>
               <a href="yo.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SOBRE MÍ</a>
               <a href="menuRutinas.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RUTINAS</a>
-              <a href="dietas.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DIETAS</a>
+              <a href="dietas.html"class="w3-bar-item w3-button w3-padding-large w3-hide-small">DIETAS</a>
               <a href="ejercicios.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EJERCICIOS</a>
             </div>
           </div>
@@ -28,38 +28,40 @@
           <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
             <a href="yo.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SOBRE MÍ</a>
             <a href="menuRutinas.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RUTINAS</a>
-            <a href="dietas.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DIETAS</a>
+            <a href="dietas.html"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DIETAS</a>
             <a href="ejercicios.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">EJERCICIOS</a>
           </div>
     </div>
     <main>
-      <br>
-      <br>      
-      <h3>Ejercicios por Grupo Muscular</h3>
-      <label for="grupoMuscular">Selecciona un grupo muscular:</label>
-      <select id="grupoMuscular" onchange="filtrarEjercicios()">
-        <option value="">--Selecciona un grupo muscular--</option>
-        <option value="Pectoral">Pectoral</option>
-        <option value="Hombro">Hombro</option>
-        <option value="Tríceps">Tríceps</option>
-        <option value="Espalda">Espalda</option>
-        <option value="Bíceps">Bíceps</option>
-        <option value="Pierna">Pierna</option>
-    </select>
-    <div id="resultado"></div>
+      <div class="about" id="about">
+        <div>
+            <div class="about-main">
+          <div>
 
-    <script src="script.js"></script>
-    </main>
-    
-    <script>
-      function myFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-        } else { 
-          x.className = x.className.replace(" w3-show", "");
-        }
-      }
-    </script>
+          </div>
+          <div class="about-text">
+             <h3>Soy Sergio, <br>Personal Trainer para principiantes </h3>
+             <p>Llevo poco tiempo entrenando, por ello se las dudas que te pueden surgir. Voy a intentar que cualquier principiante pueda tener los conocimientos que yo hubiese querido tener ese primer día.</p>
+             <div style="margin-top:40px">
+              <span class="w3-text-white social" >
+                <p >Sígueme en mis redes sociales</p>
+                <div class="w3-margin-top">
+             <a href="#">  <i class="fa fa-facebook-official w3-hover-opacity icons" ></i></a> 
+             <a href="#"><i class="fa fa-instagram w3-hover-opacity icons" ></i></a> 
+             <a href="#"><i class="fa fa-snapchat w3-hover-opacity icons"></i></a>  
+             <a href="#"><i class="fa fa-pinterest-p w3-hover-opacity icons" ></i></a>  
+             <a href="#"><i class="fa fa-twitter w3-hover-opacity icons"></i></a>  
+             <a href="#"><i class="fa fa-linkedin w3-hover-opacity icons"></i></a>  
+             </div>
+              </span>
+             </div>
+            
+          </div>
+
+        </div>
+        </div>
+
+      </div>
+      
 </body>
 </html>
